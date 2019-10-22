@@ -59,7 +59,7 @@
             this.lbQLKH.Location = new System.Drawing.Point(229, 9);
             this.lbQLKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbQLKH.Name = "lbQLKH";
-            this.lbQLKH.Size = new System.Drawing.Size(237, 25);
+            this.lbQLKH.Size = new System.Drawing.Size(296, 29);
             this.lbQLKH.TabIndex = 0;
             this.lbQLKH.Text = "QUẢN LÝ KHÁCH HÀNG";
             // 
@@ -71,7 +71,7 @@
             this.lbHoTenKH.Location = new System.Drawing.Point(18, 72);
             this.lbHoTenKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbHoTenKH.Name = "lbHoTenKH";
-            this.lbHoTenKH.Size = new System.Drawing.Size(77, 20);
+            this.lbHoTenKH.Size = new System.Drawing.Size(95, 25);
             this.lbHoTenKH.TabIndex = 0;
             this.lbHoTenKH.Text = "Họ và tên";
             // 
@@ -83,7 +83,7 @@
             this.lbDiaChiKH.Location = new System.Drawing.Point(18, 126);
             this.lbDiaChiKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDiaChiKH.Name = "lbDiaChiKH";
-            this.lbDiaChiKH.Size = new System.Drawing.Size(57, 20);
+            this.lbDiaChiKH.Size = new System.Drawing.Size(71, 25);
             this.lbDiaChiKH.TabIndex = 0;
             this.lbDiaChiKH.Text = "Địa chỉ";
             // 
@@ -95,7 +95,7 @@
             this.lbQueQuanKH.Location = new System.Drawing.Point(18, 181);
             this.lbQueQuanKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbQueQuanKH.Name = "lbQueQuanKH";
-            this.lbQueQuanKH.Size = new System.Drawing.Size(79, 20);
+            this.lbQueQuanKH.Size = new System.Drawing.Size(99, 25);
             this.lbQueQuanKH.TabIndex = 0;
             this.lbQueQuanKH.Text = "Quê quán";
             // 
@@ -107,7 +107,7 @@
             this.lbNgaySinhKH.Location = new System.Drawing.Point(388, 72);
             this.lbNgaySinhKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNgaySinhKH.Name = "lbNgaySinhKH";
-            this.lbNgaySinhKH.Size = new System.Drawing.Size(78, 20);
+            this.lbNgaySinhKH.Size = new System.Drawing.Size(99, 25);
             this.lbNgaySinhKH.TabIndex = 0;
             this.lbNgaySinhKH.Text = "Ngày sinh";
             // 
@@ -119,7 +119,7 @@
             this.lbSoDTKH.Location = new System.Drawing.Point(388, 126);
             this.lbSoDTKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSoDTKH.Name = "lbSoDTKH";
-            this.lbSoDTKH.Size = new System.Drawing.Size(102, 20);
+            this.lbSoDTKH.Size = new System.Drawing.Size(126, 25);
             this.lbSoDTKH.TabIndex = 0;
             this.lbSoDTKH.Text = "Số điện thoại";
             // 
@@ -131,7 +131,7 @@
             this.lbSoCMNDKH.Location = new System.Drawing.Point(388, 181);
             this.lbSoCMNDKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSoCMNDKH.Name = "lbSoCMNDKH";
-            this.lbSoCMNDKH.Size = new System.Drawing.Size(80, 20);
+            this.lbSoCMNDKH.Size = new System.Drawing.Size(102, 25);
             this.lbSoCMNDKH.TabIndex = 0;
             this.lbSoCMNDKH.Text = "Số CMND";
             // 
@@ -139,42 +139,42 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(115, 69);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 26);
+            this.textBox1.Size = new System.Drawing.Size(212, 30);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(115, 123);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 26);
+            this.textBox2.Size = new System.Drawing.Size(212, 30);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(115, 178);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 26);
+            this.textBox3.Size = new System.Drawing.Size(212, 30);
             this.textBox3.TabIndex = 1;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(497, 178);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(212, 26);
+            this.textBox4.Size = new System.Drawing.Size(212, 30);
             this.textBox4.TabIndex = 1;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(497, 123);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(212, 26);
+            this.textBox5.Size = new System.Drawing.Size(212, 30);
             this.textBox5.TabIndex = 1;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(497, 69);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(212, 26);
+            this.textBox6.Size = new System.Drawing.Size(212, 30);
             this.textBox6.TabIndex = 1;
             // 
             // listView1
@@ -237,7 +237,7 @@
             // 
             // frmQuanLyKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 507);
             this.Controls.Add(this.listView1);
@@ -258,7 +258,9 @@
             this.ForeColor = System.Drawing.Color.Blue;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmQuanLyKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuanLyKhachHang";
+            this.Load += new System.EventHandler(this.frmQuanLyKhachHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

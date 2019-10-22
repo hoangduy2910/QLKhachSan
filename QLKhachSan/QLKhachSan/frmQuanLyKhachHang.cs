@@ -15,5 +15,21 @@ namespace QLKhachSan
         {
             InitializeComponent();
         }
+
+        private void frmQuanLyKhachHang_Load(object sender, EventArgs e)
+        {
+            this.Show();
+            this.Enabled = false;
+            frmLogin frmLogin = new frmLogin();
+            DialogResult result = frmLogin.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.Enabled = true;
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
     }
 }
