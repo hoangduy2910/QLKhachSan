@@ -27,7 +27,7 @@ namespace QLKhachSan
             }
             else
             {
-                DialogResult res = MessageBox.Show("Sai TTT", " ", MessageBoxButtons.RetryCancel, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show("Sai thông tin tài khoản hoặc mật khẩu", "Đăng nhập thất bại", MessageBoxButtons.RetryCancel, MessageBoxIcon.Information);
                 if (res == DialogResult.Retry)
                 {
                     txtUser.Focus();
