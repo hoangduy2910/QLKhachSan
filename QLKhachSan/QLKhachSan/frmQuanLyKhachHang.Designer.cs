@@ -300,6 +300,7 @@
             this.Name = "frmQuanLyKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuanLyKhachHang";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmQuanLyKhachHang_FormClosed);
             this.Load += new System.EventHandler(this.frmQuanLyKhachHang_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

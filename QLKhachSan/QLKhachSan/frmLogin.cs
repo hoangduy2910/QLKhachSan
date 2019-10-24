@@ -22,21 +22,15 @@ namespace QLKhachSan
             string pass = txtPass.Text;
             if (user == "admin" && pass == "123")
             {
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                frmQuanLyKhachHang QLKH = new frmQuanLyKhachHang(this);
+                this.Hide();
+                QLKH.Show();    
             }
             else
             {
-                DialogResult res = MessageBox.Show("Sai thông tin tài khoản hoặc mật khẩu", "Đăng nhập thất bại", MessageBoxButtons.RetryCancel, MessageBoxIcon.Information);
-                if (res == DialogResult.Retry)
-                {
-                    txtUser.Focus();
-                }
-                else
-                {
-                    this.DialogResult = DialogResult.Cancel;
-                }
-
+                MessageBox.Show("Sai thông tin tài khoản hoặc mật khẩu", "Đăng nhập thất bại");
+                txtUser.Text = "";
+                txtPass.Text = "";
             }
         }
     }

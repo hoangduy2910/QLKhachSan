@@ -12,11 +12,13 @@ namespace QLKhachSan
     public partial class frmThemKhachHang : Form
     {
         List<KhachHang> listKH;
+        frmQuanLyKhachHang QLKH;
 
-        internal frmThemKhachHang(List<KhachHang> list)
+        internal frmThemKhachHang(List<KhachHang> listKH, frmQuanLyKhachHang QLKH)
         {
             InitializeComponent();
-            listKH = list;
+            this.listKH = listKH;
+            this.QLKH = QLKH;
         }
 
         private void btThemKH_Click(object sender, EventArgs e)
@@ -32,10 +34,10 @@ namespace QLKhachSan
             soCMND = txtSoCMNDKH.Text;
 
             listKH.Add(new KhachHang(maKH, hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND));
-            MessageBox.Show("Thêm khách hàng thành công");
+            MessageBox.Show("Thêm khách hàng thành công", "Thêm khách hàng");
+
             this.Close();
-            frmQuanLyKhachHang QLKH = new frmQuanLyKhachHang();
-            QLKH.Show();
+            QLKH.hienThiKhachHang();
         }
     }
 }

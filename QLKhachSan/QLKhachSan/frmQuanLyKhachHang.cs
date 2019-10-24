@@ -11,9 +11,24 @@ namespace QLKhachSan
 {
     public partial class frmQuanLyKhachHang : Form
     {
+        frmLogin login;
+        frmThemKhachHang themKhachHang;
+
         public frmQuanLyKhachHang()
         {
             InitializeComponent();
+        }
+
+        public frmQuanLyKhachHang(frmLogin login)
+        {
+            InitializeComponent();
+            this.login = login;
+        }
+
+        public frmQuanLyKhachHang(frmThemKhachHang themKhachHang)
+        {
+            InitializeComponent();
+            this.themKhachHang = themKhachHang;
         }
 
         List<KhachHang> listKH = new List<KhachHang>();
@@ -21,14 +36,14 @@ namespace QLKhachSan
         private void khoiTaoKhachHang()
         {
             KhachHang kh1 = new KhachHang("KH1", "Nguyễn Văn A", "123 TP.HCM", "TP.HCM", "01/01/1999", "123456789", "987654321");
-            KhachHang kh2 = new KhachHang("KH2", "Trần Thị B", "123 TP.HCM", "TP.HCM", "02/06/2000", "123456789", "987654321");
-            KhachHang kh3 = new KhachHang("KH3", "Lê Hoàng C", "123 TP.HCM", "TP.HCM", "03/04/1996", "123456789", "987654321");
+            KhachHang kh2 = new KhachHang("KH2", "Trần Thị B", "456 TP.HCM", "Đà Nẵng", "02/06/2000", "123456789", "987654321");
+            KhachHang kh3 = new KhachHang("KH3", "Lê Hoàng C", "789 TP.HCM", "Bảo Lộc", "03/04/1996", "123456789", "987654321");
             listKH.Add(kh1);
             listKH.Add(kh2);
             listKH.Add(kh3);
         }
 
-        private void hienThiKhachHang()
+        public void hienThiKhachHang()
         {
             listViewKH.Items.Clear();
             for (int i = 0; i < listKH.Count; i++)
@@ -36,31 +51,17 @@ namespace QLKhachSan
                 string[] khachHang = { listKH[i].maKH, listKH[i].hoTen, listKH[i].diaChi, listKH[i].queQuan, listKH[i].ngaySinh, listKH[i].soDienThoai, listKH[i].soCMND };
                 listViewKH.Items.Add(new ListViewItem(khachHang));
             }
-            Console.WriteLine("123");
         }
 
-        private void frmQuanLyKhachHang_Load(object sender, EventArgs e)
+        public void frmQuanLyKhachHang_Load(object sender, EventArgs e)
         {
-            this.Show();
-            this.Enabled = false;
-            frmLogin frmLogin = new frmLogin();
-            DialogResult result = frmLogin.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                this.Enabled = true;
-            }
-            else
-            {
-                Application.Exit();
-            }
             khoiTaoKhachHang();
             hienThiKhachHang();  
         }
 
         private void themKH_Click(object sender, EventArgs e)
         {
-            frmThemKhachHang themKH = new frmThemKhachHang(listKH);
-            this.Hide();
+            frmThemKhachHang themKH = new frmThemKhachHang(listKH, this);
             themKH.Show();
         }
 
@@ -81,6 +82,12 @@ namespace QLKhachSan
             txtQueQuanKH.Text = queQuan;
             txtSoDienThoaiKH.Text = soDienThoai;
             txtSoCMNDKH.Text = soCMND;
+        }
+
+        private void frmQuanLyKhachHang_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            login.Close();
+            themKhachHang.Close();
         }
     }
 }
