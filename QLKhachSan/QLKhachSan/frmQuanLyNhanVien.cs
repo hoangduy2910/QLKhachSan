@@ -15,47 +15,99 @@ namespace QLKhachSan
         {
             InitializeComponent();
         }
+
         List<NhanVien> listNV = new List<NhanVien>();
 
         private void khoiTaoNhanVien()
         {
-            NhanVien nv1 = new NhanVien("NV1", "Duy", "123 TP.HCM", "TP.HCM", "01/01/1999", "123456789", "987654321","100000");
-            NhanVien nv2 = new NhanVien("NV2", "Nam", "456 TP.HCM", "Đà Nẵng", "02/06/2000", "123456789", "987654321", "200000");
+            NhanVien nv1 = new NhanVien("NV1", "Nguyễn Hoàng Duy", "123 TP.HCM", "TP.HCM", "01/01/1999", "123456789", "987654321", "100000", "Tiếp tân");
+            NhanVien nv2 = new NhanVien("NV2", "Nguyễn Phương Nam", "456 TP.HCM", "Đà Nẵng", "02/06/2000", "123456789", "987654321", "200000", "Đầu bếp");
             listNV.Add(nv1);
-            listNV.Add(nv1);
+            listNV.Add(nv2);
         }
 
-        public void hienThiKhachHang()
+        public void hienThiNhanVien()
         {
-            listView1.Items.Clear();
+            listViewNV.Items.Clear();
             for (int i = 0; i < listNV.Count; i++)
             {
-                string[] NhanVien = { listNV[i].maNV, listNV[i].hoTen, listNV[i].diaChi, listNV[i].queQuan, listNV[i].ngaySinh, listNV[i].soDienThoai, listNV[i].soCMND,listNV[i].luong };
-                listView1.Items.Add(new ListViewItem(NhanVien));
+                string[] nhanVien = { listNV[i].maNV, listNV[i].hoTen, listNV[i].diaChi, listNV[i].queQuan, listNV[i].ngaySinh, listNV[i].soDienThoai, listNV[i].soCMND, listNV[i].luong, listNV[i].chucVu };
+                listViewNV.Items.Add(new ListViewItem(nhanVien));
             }
         }
 
         private void frmQuanLyNhanVien_Load(object sender, EventArgs e)
         {
             khoiTaoNhanVien();
-            hienThiKhachHang();
+            hienThiNhanVien();
         }
 
-        private void txtThem_Click(object sender, EventArgs e)
+        private void clearTxt()
         {
-            var hoTen = txtHoTen.Text;
-            var maNV = txtMaNV.Text;
-            var diaChi = txtDiaChi.Text;
-            var queQuan = txtQueQuan.Text;
-            var ngaySinh = txtNgaySinh.Text;
-            var soDienThoai = txtSDT.Text;
-            var soCMND = txtCMND.Text;
-            var luong = txtLuong.Text;
-            NhanVien nv = new NhanVien(maNV, hoTen, diaChi, queQuan, ngaySinh, soDienThoai, soCMND, luong);
-            listNV.Add(nv);
-            hienThiKhachHang();
+            txtHoTen.Text = "";
+            txtDiaChi.Text = "";
+            txtNgaySinh.Text = "";
+            txtQueQuan.Text = "";
+            txtSDT.Text = "";
+            txtCMND.Text = "";
+            txtLuong.Text = "";
+            txtChucVu.Text = "";
         }
 
+        private void listViewNV_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtHoTen.Text = listViewNV.SelectedItems[0].SubItems[1].Text;
+            txtDiaChi.Text = listViewNV.SelectedItems[0].SubItems[2].Text;
+            txtNgaySinh.Text = listViewNV.SelectedItems[0].SubItems[3].Text;
+            txtQueQuan.Text = listViewNV.SelectedItems[0].SubItems[4].Text;
+            txtSDT.Text = listViewNV.SelectedItems[0].SubItems[5].Text;
+            txtCMND.Text = listViewNV.SelectedItems[0].SubItems[6].Text;
+            txtLuong.Text = listViewNV.SelectedItems[0].SubItems[7].Text;
+            txtChucVu.Text = listViewNV.SelectedItems[0].SubItems[8].Text;
+        }
 
+        private void btnThemNV_Click(object sender, EventArgs e)
+        {
+            string maNV, hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND, luong, chucVu;
+
+            maNV = "NV" + (listNV.Count + 1).ToString();
+            hoTen = txtHoTen.Text;
+            diaChi = txtDiaChi.Text;
+            ngaySinh = txtNgaySinh.Text;
+            queQuan = txtQueQuan.Text;
+            soDienThoai = txtSDT.Text;
+            soCMND = txtCMND.Text;
+            luong = txtLuong.Text;
+            chucVu = txtChucVu.Text;
+
+            listNV.Add(new NhanVien(maNV, hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND, luong, chucVu));
+            MessageBox.Show("Thêm nhân viên thành công", "Thêm nhân viên");
+
+            hienThiNhanVien();
+            clearTxt();
+        }
+
+        private void btnCapNhatNV_Click(object sender, EventArgs e)
+        {
+            listViewNV.SelectedItems[0].SubItems[1].Text = txtHoTen.Text;
+            listViewNV.SelectedItems[0].SubItems[2].Text = txtDiaChi.Text;
+            listViewNV.SelectedItems[0].SubItems[3].Text = txtNgaySinh.Text;
+            listViewNV.SelectedItems[0].SubItems[4].Text = txtQueQuan.Text;
+            listViewNV.SelectedItems[0].SubItems[5].Text = txtSDT.Text;
+            listViewNV.SelectedItems[0].SubItems[6].Text = txtCMND.Text;
+
+            MessageBox.Show("Cập nhật nhân viên thành công", "Cập nhật nhân viên");
+            clearTxt();
+        }
+
+        private void btnXoaNV_Click(object sender, EventArgs e)
+        {
+            DialogResult dR = MessageBox.Show("Bạn có chắc muốn xóa nhân viên này ?", "Xóa nhân viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dR == DialogResult.Yes)
+            {
+                listViewNV.SelectedItems[0].Remove();
+                clearTxt();
+            }
+        }
     }
 }

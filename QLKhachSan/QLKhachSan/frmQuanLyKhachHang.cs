@@ -12,7 +12,6 @@ namespace QLKhachSan
     public partial class frmQuanLyKhachHang : Form
     {
         frmLogin login;
-        frmThemKhachHang themKhachHang;
 
         public frmQuanLyKhachHang()
         {
@@ -23,12 +22,6 @@ namespace QLKhachSan
         {
             InitializeComponent();
             this.login = login;
-        }
-
-        public frmQuanLyKhachHang(frmThemKhachHang themKhachHang)
-        {
-            InitializeComponent();
-            this.themKhachHang = themKhachHang;
         }
 
         List<KhachHang> listKH = new List<KhachHang>();
@@ -59,45 +52,71 @@ namespace QLKhachSan
             hienThiKhachHang();  
         }
 
-        private void themKH_Click(object sender, EventArgs e)
-        {
-            frmThemKhachHang themKH = new frmThemKhachHang(listKH, this);
-            themKH.Show();
-        }
-
         private void listViewKH_MouseClick(object sender, MouseEventArgs e)
         {
-            string hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND;
-
-            hoTen = listViewKH.SelectedItems[0].SubItems[1].Text;
-            diaChi = listViewKH.SelectedItems[0].SubItems[2].Text;
-            ngaySinh = listViewKH.SelectedItems[0].SubItems[3].Text;
-            queQuan = listViewKH.SelectedItems[0].SubItems[4].Text;
-            soDienThoai = listViewKH.SelectedItems[0].SubItems[5].Text;
-            soCMND = listViewKH.SelectedItems[0].SubItems[6].Text;
-
-            txtHoTenKH.Text = hoTen;
-            txtDiaChiKH.Text = diaChi;
-            txtNgaySinhKH.Text = ngaySinh;
-            txtQueQuanKH.Text = queQuan;
-            txtSoDienThoaiKH.Text = soDienThoai;
-            txtSoCMNDKH.Text = soCMND;
+            txtHoTenKH.Text = listViewKH.SelectedItems[0].SubItems[1].Text;
+            txtDiaChiKH.Text = listViewKH.SelectedItems[0].SubItems[2].Text;
+            txtNgaySinhKH.Text = listViewKH.SelectedItems[0].SubItems[3].Text;
+            txtQueQuanKH.Text = listViewKH.SelectedItems[0].SubItems[4].Text;
+            txtSoDienThoaiKH.Text = listViewKH.SelectedItems[0].SubItems[5].Text;
+            txtSoCMNDKH.Text = listViewKH.SelectedItems[0].SubItems[6].Text;
         }
 
         private void frmQuanLyKhachHang_FormClosed(object sender, FormClosedEventArgs e)
         {
             login.Close();
-            themKhachHang.Close();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void clearTxt()
         {
-
+            txtHoTenKH.Text = "";
+            txtDiaChiKH.Text = "";
+            txtNgaySinhKH.Text = "";
+            txtQueQuanKH.Text = "";
+            txtSoDienThoaiKH.Text = "";
+            txtSoCMNDKH.Text = "";
         }
 
-        private void listViewKH_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnThemKH_Click(object sender, EventArgs e)
         {
+            string maKH, hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND;
 
+            maKH = "KH" + (listKH.Count + 1).ToString();
+            hoTen = txtHoTenKH.Text;
+            diaChi = txtDiaChiKH.Text;
+            ngaySinh = txtNgaySinhKH.Text;
+            queQuan = txtQueQuanKH.Text;
+            soDienThoai = txtSoDienThoaiKH.Text;
+            soCMND = txtSoCMNDKH.Text;
+
+            listKH.Add(new KhachHang(maKH, hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND));
+            MessageBox.Show("Thêm khách hàng thành công", "Thêm khách hàng");
+
+            hienThiKhachHang();
+            clearTxt();
+        }
+
+        private void btnCapNhatKH_Click(object sender, EventArgs e)
+        {
+            listViewKH.SelectedItems[0].SubItems[1].Text = txtHoTenKH.Text;
+            listViewKH.SelectedItems[0].SubItems[2].Text = txtDiaChiKH.Text;
+            listViewKH.SelectedItems[0].SubItems[3].Text = txtNgaySinhKH.Text;
+            listViewKH.SelectedItems[0].SubItems[4].Text = txtQueQuanKH.Text;
+            listViewKH.SelectedItems[0].SubItems[5].Text = txtSoDienThoaiKH.Text;
+            listViewKH.SelectedItems[0].SubItems[6].Text = txtSoCMNDKH.Text;
+
+            MessageBox.Show("Cập nhật khách hàng thành công", "Cập nhật khách hàng");
+            clearTxt();
+        }
+
+        private void btnXoaKH_Click(object sender, EventArgs e)
+        {
+            DialogResult dR = MessageBox.Show("Bạn có chắc muốn xóa khách hàng này ?", "Xóa khách hàng", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dR == DialogResult.Yes)
+            {
+                listViewKH.SelectedItems[0].Remove();
+                clearTxt();
+            }
         }
     }
 }

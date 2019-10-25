@@ -7,9 +7,9 @@ namespace QLKhachSan
 {
     public class NhanVien
     {
-        public string maNV, hoTen, diaChi, queQuan, ngaySinh, soDienThoai, soCMND, luong;
+        public string maNV, hoTen, diaChi, queQuan, ngaySinh, soDienThoai, soCMND, luong, chucVu;
 
-        public NhanVien(string maNV, string hoTen, string diaChi, string queQuan, string ngaySinh, string soDienThoai, string soCMND,string luong)
+        public NhanVien(string maNV, string hoTen, string diaChi, string queQuan, string ngaySinh, string soDienThoai, string soCMND, string luong, string chucVu)
         {
             this.maNV = maNV;
             this.hoTen = hoTen;
@@ -19,6 +19,7 @@ namespace QLKhachSan
             this.soDienThoai = soDienThoai; 
             this.soCMND = soCMND;
             this.luong = luong;
+            this.chucVu = chucVu;
         }
     }
 }
