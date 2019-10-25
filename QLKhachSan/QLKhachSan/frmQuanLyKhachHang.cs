@@ -89,5 +89,15 @@ namespace QLKhachSan
             login.Close();
             themKhachHang.Close();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void listViewKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

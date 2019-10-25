@@ -63,7 +63,7 @@
             this.lbQLKH.Location = new System.Drawing.Point(229, 42);
             this.lbQLKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbQLKH.Name = "lbQLKH";
-            this.lbQLKH.Size = new System.Drawing.Size(279, 29);
+            this.lbQLKH.Size = new System.Drawing.Size(344, 33);
             this.lbQLKH.TabIndex = 0;
             this.lbQLKH.Text = "QUẢN LÝ KHÁCH HÀNG";
             // 
@@ -75,7 +75,7 @@
             this.lbHoTenKH.Location = new System.Drawing.Point(18, 95);
             this.lbHoTenKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbHoTenKH.Name = "lbHoTenKH";
-            this.lbHoTenKH.Size = new System.Drawing.Size(77, 20);
+            this.lbHoTenKH.Size = new System.Drawing.Size(95, 25);
             this.lbHoTenKH.TabIndex = 0;
             this.lbHoTenKH.Text = "Họ và tên";
             // 
@@ -87,7 +87,7 @@
             this.lbDiaChiKH.Location = new System.Drawing.Point(18, 149);
             this.lbDiaChiKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDiaChiKH.Name = "lbDiaChiKH";
-            this.lbDiaChiKH.Size = new System.Drawing.Size(57, 20);
+            this.lbDiaChiKH.Size = new System.Drawing.Size(71, 25);
             this.lbDiaChiKH.TabIndex = 0;
             this.lbDiaChiKH.Text = "Địa chỉ";
             // 
@@ -99,7 +99,7 @@
             this.lbQueQuanKH.Location = new System.Drawing.Point(18, 204);
             this.lbQueQuanKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbQueQuanKH.Name = "lbQueQuanKH";
-            this.lbQueQuanKH.Size = new System.Drawing.Size(79, 20);
+            this.lbQueQuanKH.Size = new System.Drawing.Size(99, 25);
             this.lbQueQuanKH.TabIndex = 0;
             this.lbQueQuanKH.Text = "Quê quán";
             // 
@@ -111,7 +111,7 @@
             this.lbNgaySinhKH.Location = new System.Drawing.Point(388, 95);
             this.lbNgaySinhKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNgaySinhKH.Name = "lbNgaySinhKH";
-            this.lbNgaySinhKH.Size = new System.Drawing.Size(78, 20);
+            this.lbNgaySinhKH.Size = new System.Drawing.Size(99, 25);
             this.lbNgaySinhKH.TabIndex = 0;
             this.lbNgaySinhKH.Text = "Ngày sinh";
             // 
@@ -120,10 +120,10 @@
             this.lbSoDTKH.AutoSize = true;
             this.lbSoDTKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbSoDTKH.ForeColor = System.Drawing.Color.Blue;
-            this.lbSoDTKH.Location = new System.Drawing.Point(388, 149);
+            this.lbSoDTKH.Location = new System.Drawing.Point(364, 146);
             this.lbSoDTKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSoDTKH.Name = "lbSoDTKH";
-            this.lbSoDTKH.Size = new System.Drawing.Size(102, 20);
+            this.lbSoDTKH.Size = new System.Drawing.Size(126, 25);
             this.lbSoDTKH.TabIndex = 0;
             this.lbSoDTKH.Text = "Số điện thoại";
             // 
@@ -135,7 +135,7 @@
             this.lbSoCMNDKH.Location = new System.Drawing.Point(388, 204);
             this.lbSoCMNDKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSoCMNDKH.Name = "lbSoCMNDKH";
-            this.lbSoCMNDKH.Size = new System.Drawing.Size(80, 20);
+            this.lbSoCMNDKH.Size = new System.Drawing.Size(102, 25);
             this.lbSoCMNDKH.TabIndex = 0;
             this.lbSoCMNDKH.Text = "Số CMND";
             // 
@@ -144,7 +144,7 @@
             this.txtHoTenKH.Location = new System.Drawing.Point(115, 92);
             this.txtHoTenKH.Name = "txtHoTenKH";
             this.txtHoTenKH.ReadOnly = true;
-            this.txtHoTenKH.Size = new System.Drawing.Size(212, 26);
+            this.txtHoTenKH.Size = new System.Drawing.Size(212, 30);
             this.txtHoTenKH.TabIndex = 1;
             // 
             // txtDiaChiKH
@@ -152,7 +152,7 @@
             this.txtDiaChiKH.Location = new System.Drawing.Point(115, 146);
             this.txtDiaChiKH.Name = "txtDiaChiKH";
             this.txtDiaChiKH.ReadOnly = true;
-            this.txtDiaChiKH.Size = new System.Drawing.Size(212, 26);
+            this.txtDiaChiKH.Size = new System.Drawing.Size(212, 30);
             this.txtDiaChiKH.TabIndex = 1;
             // 
             // txtQueQuanKH
@@ -160,7 +160,7 @@
             this.txtQueQuanKH.Location = new System.Drawing.Point(115, 201);
             this.txtQueQuanKH.Name = "txtQueQuanKH";
             this.txtQueQuanKH.ReadOnly = true;
-            this.txtQueQuanKH.Size = new System.Drawing.Size(212, 26);
+            this.txtQueQuanKH.Size = new System.Drawing.Size(212, 30);
             this.txtQueQuanKH.TabIndex = 1;
             // 
             // txtSoCMNDKH
@@ -168,7 +168,7 @@
             this.txtSoCMNDKH.Location = new System.Drawing.Point(497, 201);
             this.txtSoCMNDKH.Name = "txtSoCMNDKH";
             this.txtSoCMNDKH.ReadOnly = true;
-            this.txtSoCMNDKH.Size = new System.Drawing.Size(212, 26);
+            this.txtSoCMNDKH.Size = new System.Drawing.Size(212, 30);
             this.txtSoCMNDKH.TabIndex = 1;
             // 
             // txtSoDienThoaiKH
@@ -176,7 +176,7 @@
             this.txtSoDienThoaiKH.Location = new System.Drawing.Point(497, 146);
             this.txtSoDienThoaiKH.Name = "txtSoDienThoaiKH";
             this.txtSoDienThoaiKH.ReadOnly = true;
-            this.txtSoDienThoaiKH.Size = new System.Drawing.Size(212, 26);
+            this.txtSoDienThoaiKH.Size = new System.Drawing.Size(212, 30);
             this.txtSoDienThoaiKH.TabIndex = 1;
             // 
             // txtNgaySinhKH
@@ -184,7 +184,7 @@
             this.txtNgaySinhKH.Location = new System.Drawing.Point(497, 92);
             this.txtNgaySinhKH.Name = "txtNgaySinhKH";
             this.txtNgaySinhKH.ReadOnly = true;
-            this.txtNgaySinhKH.Size = new System.Drawing.Size(212, 26);
+            this.txtNgaySinhKH.Size = new System.Drawing.Size(212, 30);
             this.txtNgaySinhKH.TabIndex = 1;
             // 
             // listViewKH
@@ -204,6 +204,7 @@
             this.listViewKH.TabIndex = 2;
             this.listViewKH.UseCompatibleStateImageBehavior = false;
             this.listViewKH.View = System.Windows.Forms.View.Details;
+            this.listViewKH.SelectedIndexChanged += new System.EventHandler(this.listViewKH_SelectedIndexChanged);
             this.listViewKH.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listViewKH_MouseClick);
             // 
             // maKH
@@ -254,15 +255,16 @@
             this.xóaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(732, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(732, 31);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // themKH
             // 
             this.themKH.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.themKH.Name = "themKH";
-            this.themKH.Size = new System.Drawing.Size(55, 23);
+            this.themKH.Size = new System.Drawing.Size(65, 27);
             this.themKH.Text = "Thêm";
             this.themKH.Click += new System.EventHandler(this.themKH_Click);
             // 
@@ -270,12 +272,12 @@
             // 
             this.xóaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(44, 23);
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(51, 27);
             this.xóaToolStripMenuItem.Text = "Xóa";
             // 
             // frmQuanLyKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 506);
             this.Controls.Add(this.listViewKH);

@@ -58,6 +58,12 @@
     <Compile Include="frmQuanLyKhachHang.Designer.cs">
       <DependentUpon>frmQuanLyKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyNhanVien.Designer.cs">
+      <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,7 @@
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang.cs" />
+    <Compile Include="NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
@@ -72,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyKhachHang.resx">
       <DependentUpon>frmQuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyNhanVien.resx">
+      <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
