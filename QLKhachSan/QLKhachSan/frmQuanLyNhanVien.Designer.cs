@@ -84,6 +84,7 @@
             // maNV
             // 
             this.maNV.Text = "Mã NV";
+            this.maNV.Width = 79;
             // 
             // hoTen
             // 
@@ -139,7 +140,7 @@
             this.lbHoTenNV.ForeColor = System.Drawing.Color.Blue;
             this.lbHoTenNV.Location = new System.Drawing.Point(12, 61);
             this.lbHoTenNV.Name = "lbHoTenNV";
-            this.lbHoTenNV.Size = new System.Drawing.Size(81, 20);
+            this.lbHoTenNV.Size = new System.Drawing.Size(103, 25);
             this.lbHoTenNV.TabIndex = 1;
             this.lbHoTenNV.Text = "Họ và Tên";
             // 
@@ -150,7 +151,7 @@
             this.lbDiaChiNV.ForeColor = System.Drawing.Color.Blue;
             this.lbDiaChiNV.Location = new System.Drawing.Point(14, 102);
             this.lbDiaChiNV.Name = "lbDiaChiNV";
-            this.lbDiaChiNV.Size = new System.Drawing.Size(57, 20);
+            this.lbDiaChiNV.Size = new System.Drawing.Size(71, 25);
             this.lbDiaChiNV.TabIndex = 1;
             this.lbDiaChiNV.Text = "Địa chỉ";
             // 
@@ -161,7 +162,7 @@
             this.lbQueQuanNV.ForeColor = System.Drawing.Color.Blue;
             this.lbQueQuanNV.Location = new System.Drawing.Point(12, 148);
             this.lbQueQuanNV.Name = "lbQueQuanNV";
-            this.lbQueQuanNV.Size = new System.Drawing.Size(79, 20);
+            this.lbQueQuanNV.Size = new System.Drawing.Size(99, 25);
             this.lbQueQuanNV.TabIndex = 1;
             this.lbQueQuanNV.Text = "Quê quán";
             // 
@@ -172,7 +173,7 @@
             this.lbNgaySinhNV.ForeColor = System.Drawing.Color.Blue;
             this.lbNgaySinhNV.Location = new System.Drawing.Point(15, 188);
             this.lbNgaySinhNV.Name = "lbNgaySinhNV";
-            this.lbNgaySinhNV.Size = new System.Drawing.Size(78, 20);
+            this.lbNgaySinhNV.Size = new System.Drawing.Size(99, 25);
             this.lbNgaySinhNV.TabIndex = 1;
             this.lbNgaySinhNV.Text = "Ngày sinh";
             // 
@@ -183,7 +184,7 @@
             this.lbSoDTNV.ForeColor = System.Drawing.Color.Blue;
             this.lbSoDTNV.Location = new System.Drawing.Point(494, 61);
             this.lbSoDTNV.Name = "lbSoDTNV";
-            this.lbSoDTNV.Size = new System.Drawing.Size(102, 20);
+            this.lbSoDTNV.Size = new System.Drawing.Size(126, 25);
             this.lbSoDTNV.TabIndex = 1;
             this.lbSoDTNV.Text = "Số điện thoại";
             // 
@@ -194,7 +195,7 @@
             this.lbSoCMNDNV.ForeColor = System.Drawing.Color.Blue;
             this.lbSoCMNDNV.Location = new System.Drawing.Point(494, 105);
             this.lbSoCMNDNV.Name = "lbSoCMNDNV";
-            this.lbSoCMNDNV.Size = new System.Drawing.Size(78, 20);
+            this.lbSoCMNDNV.Size = new System.Drawing.Size(99, 25);
             this.lbSoCMNDNV.TabIndex = 1;
             this.lbSoCMNDNV.Text = "Số CNND";
             // 
@@ -205,7 +206,7 @@
             this.lbChucVuNV.ForeColor = System.Drawing.Color.Blue;
             this.lbChucVuNV.Location = new System.Drawing.Point(494, 194);
             this.lbChucVuNV.Name = "lbChucVuNV";
-            this.lbChucVuNV.Size = new System.Drawing.Size(66, 20);
+            this.lbChucVuNV.Size = new System.Drawing.Size(85, 25);
             this.lbChucVuNV.TabIndex = 1;
             this.lbChucVuNV.Text = "Chức vụ";
             // 
@@ -213,49 +214,49 @@
             // 
             this.txtHoTen.Location = new System.Drawing.Point(131, 55);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(245, 26);
+            this.txtHoTen.Size = new System.Drawing.Size(245, 30);
             this.txtHoTen.TabIndex = 2;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(133, 99);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(243, 26);
+            this.txtDiaChi.Size = new System.Drawing.Size(243, 30);
             this.txtDiaChi.TabIndex = 2;
             // 
             // txtQueQuan
             // 
             this.txtQueQuan.Location = new System.Drawing.Point(133, 145);
             this.txtQueQuan.Name = "txtQueQuan";
-            this.txtQueQuan.Size = new System.Drawing.Size(243, 26);
+            this.txtQueQuan.Size = new System.Drawing.Size(243, 30);
             this.txtQueQuan.TabIndex = 2;
             // 
             // txtNgaySinh
             // 
             this.txtNgaySinh.Location = new System.Drawing.Point(133, 188);
             this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(243, 26);
+            this.txtNgaySinh.Size = new System.Drawing.Size(243, 30);
             this.txtNgaySinh.TabIndex = 2;
             // 
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(605, 58);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(246, 26);
+            this.txtSDT.Size = new System.Drawing.Size(246, 30);
             this.txtSDT.TabIndex = 2;
             // 
             // txtCMND
             // 
             this.txtCMND.Location = new System.Drawing.Point(605, 102);
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(246, 26);
+            this.txtCMND.Size = new System.Drawing.Size(246, 30);
             this.txtCMND.TabIndex = 2;
             // 
             // txtChucVu
             // 
             this.txtChucVu.Location = new System.Drawing.Point(605, 191);
             this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.Size = new System.Drawing.Size(246, 26);
+            this.txtChucVu.Size = new System.Drawing.Size(246, 30);
             this.txtChucVu.TabIndex = 2;
             // 
             // btnThemNV
@@ -276,7 +277,7 @@
             this.lbQLKH.Location = new System.Drawing.Point(320, 9);
             this.lbQLKH.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbQLKH.Name = "lbQLKH";
-            this.lbQLKH.Size = new System.Drawing.Size(252, 29);
+            this.lbQLKH.Size = new System.Drawing.Size(308, 33);
             this.lbQLKH.TabIndex = 4;
             this.lbQLKH.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
@@ -309,7 +310,7 @@
             this.lbLuongNV.ForeColor = System.Drawing.Color.Blue;
             this.lbLuongNV.Location = new System.Drawing.Point(494, 151);
             this.lbLuongNV.Name = "lbLuongNV";
-            this.lbLuongNV.Size = new System.Drawing.Size(54, 20);
+            this.lbLuongNV.Size = new System.Drawing.Size(67, 25);
             this.lbLuongNV.TabIndex = 1;
             this.lbLuongNV.Text = "Lương";
             // 
@@ -317,12 +318,12 @@
             // 
             this.txtLuong.Location = new System.Drawing.Point(605, 148);
             this.txtLuong.Name = "txtLuong";
-            this.txtLuong.Size = new System.Drawing.Size(246, 26);
+            this.txtLuong.Size = new System.Drawing.Size(246, 30);
             this.txtLuong.TabIndex = 2;
             // 
             // frmQuanLyNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 550);
             this.Controls.Add(this.lbQLKH);
