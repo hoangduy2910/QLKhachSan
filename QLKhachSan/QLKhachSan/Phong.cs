@@ -7,15 +7,17 @@ namespace QLKhachSan
 {
     public class Phong
     {
-        public string maPh, tinhTrang, checkin, checkout, tenPh, ghiChu;
-        public Phong(string maPh, string tinhTrang, string checkin, string checkout, string tenPh, string ghiChu)
+        public string maPhong, loaiPhong, tinhTrang, ngayVao, ngayDi, tenKH, soCMND;
+
+        public Phong(string maPhong, string loaiPhong, string tinhTrang, string ngayVao, string ngayDi, string tenKH, string soCMND)
         {
-            this.maPh = maPh;
+            this.maPhong = maPhong;
+            this.loaiPhong = loaiPhong;
             this.tinhTrang = tinhTrang;
-            this.checkin = checkin;
-            this.checkout = checkout;
-            this.tenPh = tenPh;
-            this.ghiChu = ghiChu;
+            this.ngayVao = ngayVao;
+            this.ngayDi = ngayDi;
+            this.tenKH = tenKH;
+            this.soCMND = soCMND;
         }
     }
 }

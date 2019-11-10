@@ -22,9 +22,9 @@ namespace QLKhachSan
             string pass = txtPass.Text;
             if (user == "admin" && pass == "123")
             {
-                frmQuanLyKhachHang QLKH = new frmQuanLyKhachHang(this);
+                frmTrangChu home = new frmTrangChu(this);
                 this.Hide();
-                QLKH.Show();    
+                home.Show();    
             }
             else
             {

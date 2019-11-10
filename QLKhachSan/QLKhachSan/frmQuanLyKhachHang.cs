@@ -11,17 +11,9 @@ namespace QLKhachSan
 {
     public partial class frmQuanLyKhachHang : Form
     {
-        frmLogin login;
-
         public frmQuanLyKhachHang()
         {
             InitializeComponent();
-        }
-
-        public frmQuanLyKhachHang(frmLogin login)
-        {
-            InitializeComponent();
-            this.login = login;
         }
 
         List<KhachHang> listKH = new List<KhachHang>();
@@ -60,11 +52,6 @@ namespace QLKhachSan
             txtQueQuanKH.Text = listViewKH.SelectedItems[0].SubItems[4].Text;
             txtSoDienThoaiKH.Text = listViewKH.SelectedItems[0].SubItems[5].Text;
             txtSoCMNDKH.Text = listViewKH.SelectedItems[0].SubItems[6].Text;
-        }
-
-        private void frmQuanLyKhachHang_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            login.Close();
         }
 
         private void clearTxt()
