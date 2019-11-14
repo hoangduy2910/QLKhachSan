@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="240d408b-95c4-4803-87f7-5ae5bf7e1334" name="Mr.Bao@DESKTOP-MNT85I8 2019-11-14 09:45:07" runUser="DESKTOP-MNT85I8\Mr.Bao" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4832f6f6-0122-46c3-a19a-a0aebfdfd26e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mr.Bao_DESKTOP-MNT85I8 2019-11-14 09_45_07">
+      <DeploymentItem filename="C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\QLKhachSan\bin\Debug\QLKhachSan.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-11-14T09:45:07.4428272+07:00" queuing="2019-11-14T09:45:07.6206663+07:00" start="2019-11-14T09:45:07.6385586+07:00" finish="2019-11-14T09:45:08.0801696+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="1" error="0" failed="5" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestKhongNhapUserName" storage="c:\users\mr.bao\desktop\qlkhachsan\qlkhachsan\testformlogin\bin\debug\testformlogin.dll" id="d4cdd5b7-c959-94db-6c9c-63d20cd59a53">
+      <Execution id="5faed327-5378-4649-bafb-41fecd28ad8c" />
+      <TestMethod codeBase="C:/Users/Mr.Bao/Desktop/QLKhachSan/QLKhachSan/TestFormLogin/bin/Debug/TestFormLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestFormLogin.UnitTestFormLogin, TestFormLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestKhongNhapUserName" />
+    </UnitTest>
+    <UnitTest name="TestKhongNhapPassword" storage="c:\users\mr.bao\desktop\qlkhachsan\qlkhachsan\testformlogin\bin\debug\testformlogin.dll" id="dc86a428-8669-f14a-6cf3-fd727cf9a0df">
+      <Execution id="6a0459fc-2a35-47b7-aeff-1f2381878213" />
+      <TestMethod codeBase="C:/Users/Mr.Bao/Desktop/QLKhachSan/QLKhachSan/TestFormLogin/bin/Debug/TestFormLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestFormLogin.UnitTestFormLogin, TestFormLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestKhongNhapPassword" />
+    </UnitTest>
+    <UnitTest name="TestKhongNhapUserNameVaPassword" storage="c:\users\mr.bao\desktop\qlkhachsan\qlkhachsan\testformlogin\bin\debug\testformlogin.dll" id="3ffcf067-8c0f-cb8f-9160-dedbcd81c4a4">
+      <Execution id="b1413ad4-bc11-4578-9c9b-08edd6a77433" />
+      <TestMethod codeBase="C:/Users/Mr.Bao/Desktop/QLKhachSan/QLKhachSan/TestFormLogin/bin/Debug/TestFormLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestFormLogin.UnitTestFormLogin, TestFormLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestKhongNhapUserNameVaPassword" />
+    </UnitTest>
+    <UnitTest name="TestDangNhapThanhCong" storage="c:\users\mr.bao\desktop\qlkhachsan\qlkhachsan\testformlogin\bin\debug\testformlogin.dll" id="9a7c029e-6ac7-139c-a677-c95f8c793e8a">
+      <Execution id="f1b0682d-236d-4a69-8e6c-1986eb9180c5" />
+      <TestMethod codeBase="C:/Users/Mr.Bao/Desktop/QLKhachSan/QLKhachSan/TestFormLogin/bin/Debug/TestFormLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestFormLogin.UnitTestFormLogin, TestFormLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDangNhapThanhCong" />
+    </UnitTest>
+    <UnitTest name="TestDangNhapSaiUsername" storage="c:\users\mr.bao\desktop\qlkhachsan\qlkhachsan\testformlogin\bin\debug\testformlogin.dll" id="e1bea3ac-d61e-bfab-f58f-e4df2d9e4d98">
+      <Execution id="8baf4bfd-8f86-4a87-8e80-230a5aba66fe" />
+      <TestMethod codeBase="C:/Users/Mr.Bao/Desktop/QLKhachSan/QLKhachSan/TestFormLogin/bin/Debug/TestFormLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestFormLogin.UnitTestFormLogin, TestFormLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDangNhapSaiUsername" />
+    </UnitTest>
+    <UnitTest name="TestDangSaiPassword" storage="c:\users\mr.bao\desktop\qlkhachsan\qlkhachsan\testformlogin\bin\debug\testformlogin.dll" id="bae121d2-c58b-4a3d-7e43-c772e5045cb7">
+      <Execution id="adccc22e-2bd5-4d55-8674-b712e5e33dca" />
+      <TestMethod codeBase="C:/Users/Mr.Bao/Desktop/QLKhachSan/QLKhachSan/TestFormLogin/bin/Debug/TestFormLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestFormLogin.UnitTestFormLogin, TestFormLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDangSaiPassword" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3ffcf067-8c0f-cb8f-9160-dedbcd81c4a4" executionId="b1413ad4-bc11-4578-9c9b-08edd6a77433" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a7c029e-6ac7-139c-a677-c95f8c793e8a" executionId="f1b0682d-236d-4a69-8e6c-1986eb9180c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bae121d2-c58b-4a3d-7e43-c772e5045cb7" executionId="adccc22e-2bd5-4d55-8674-b712e5e33dca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4cdd5b7-c959-94db-6c9c-63d20cd59a53" executionId="5faed327-5378-4649-bafb-41fecd28ad8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc86a428-8669-f14a-6cf3-fd727cf9a0df" executionId="6a0459fc-2a35-47b7-aeff-1f2381878213" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1bea3ac-d61e-bfab-f58f-e4df2d9e4d98" executionId="8baf4bfd-8f86-4a87-8e80-230a5aba66fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b1413ad4-bc11-4578-9c9b-08edd6a77433" testId="3ffcf067-8c0f-cb8f-9160-dedbcd81c4a4" testName="TestKhongNhapUserNameVaPassword" computerName="DESKTOP-MNT85I8" duration="00:00:00.0265289" startTime="2019-11-14T09:45:07.6475631+07:00" endTime="2019-11-14T09:45:07.8889203+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1413ad4-bc11-4578-9c9b-08edd6a77433">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;admin&gt;. Actual:&lt;&gt;. </Message>
+          <StackTrace>   at TestFormLogin.UnitTestFormLogin.TestKhongNhapUserNameVaPassword() in C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\TestFormLogin\UnitTestFormLogin.cs:line 59
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f1b0682d-236d-4a69-8e6c-1986eb9180c5" testId="9a7c029e-6ac7-139c-a677-c95f8c793e8a" testName="TestDangNhapThanhCong" computerName="DESKTOP-MNT85I8" duration="00:00:00.0001512" startTime="2019-11-14T09:45:07.8948958+07:00" endTime="2019-11-14T09:45:07.8984482+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1b0682d-236d-4a69-8e6c-1986eb9180c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="adccc22e-2bd5-4d55-8674-b712e5e33dca" testId="bae121d2-c58b-4a3d-7e43-c772e5045cb7" testName="TestDangSaiPassword" computerName="DESKTOP-MNT85I8" duration="00:00:00.0017257" startTime="2019-11-14T09:45:07.9034397+07:00" endTime="2019-11-14T09:45:07.9074245+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adccc22e-2bd5-4d55-8674-b712e5e33dca">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;123&gt;. Actual:&lt;12345&gt;. </Message>
+          <StackTrace>   at TestFormLogin.UnitTestFormLogin.TestDangSaiPassword() in C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\TestFormLogin\UnitTestFormLogin.cs:line 40
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5faed327-5378-4649-bafb-41fecd28ad8c" testId="d4cdd5b7-c959-94db-6c9c-63d20cd59a53" testName="TestKhongNhapUserName" computerName="DESKTOP-MNT85I8" duration="00:00:00.0015781" startTime="2019-11-14T09:45:07.9124106+07:00" endTime="2019-11-14T09:45:07.9173987+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5faed327-5378-4649-bafb-41fecd28ad8c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;admin&gt;. Actual:&lt;&gt;. </Message>
+          <StackTrace>   at TestFormLogin.UnitTestFormLogin.TestKhongNhapUserName() in C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\TestFormLogin\UnitTestFormLogin.cs:line 46
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6a0459fc-2a35-47b7-aeff-1f2381878213" testId="dc86a428-8669-f14a-6cf3-fd727cf9a0df" testName="TestKhongNhapPassword" computerName="DESKTOP-MNT85I8" duration="00:00:00.0015186" startTime="2019-11-14T09:45:07.9967100+07:00" endTime="2019-11-14T09:45:08.0017131+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a0459fc-2a35-47b7-aeff-1f2381878213">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;123&gt;. Actual:&lt;&gt;. </Message>
+          <StackTrace>   at TestFormLogin.UnitTestFormLogin.TestKhongNhapPassword() in C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\TestFormLogin\UnitTestFormLogin.cs:line 53
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8baf4bfd-8f86-4a87-8e80-230a5aba66fe" testId="e1bea3ac-d61e-bfab-f58f-e4df2d9e4d98" testName="TestDangNhapSaiUsername" computerName="DESKTOP-MNT85I8" duration="00:00:00.0020611" startTime="2019-11-14T09:45:08.0066669+07:00" endTime="2019-11-14T09:45:08.0116691+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8baf4bfd-8f86-4a87-8e80-230a5aba66fe">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;admin&gt;. Actual:&lt;admin123&gt;. </Message>
+          <StackTrace>   at TestFormLogin.UnitTestFormLogin.TestDangNhapSaiUsername() in C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\TestFormLogin\UnitTestFormLogin.cs:line 32
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

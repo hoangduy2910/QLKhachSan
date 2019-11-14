@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="24eb1de5-f8c7-4f23-9059-16bd12059558" name="Mr.Bao@DESKTOP-MNT85I8 2019-11-14 09:45:45" runUser="DESKTOP-MNT85I8\Mr.Bao" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4832f6f6-0122-46c3-a19a-a0aebfdfd26e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mr.Bao_DESKTOP-MNT85I8 2019-11-14 09_45_45">
+      <DeploymentItem filename="C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\QLKhachSan\bin\Debug\QLKhachSan.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-11-14T09:45:45.3676046+07:00" queuing="2019-11-14T09:45:45.3775729+07:00" start="2019-11-14T09:45:45.3825604+07:00" finish="2019-11-14T09:45:45.6322614+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestDangNhapSaiUsername" storage="c:\users\mr.bao\desktop\qlkhachsan\qlkhachsan\testformlogin\bin\debug\testformlogin.dll" id="e1bea3ac-d61e-bfab-f58f-e4df2d9e4d98">
+      <Execution id="8ab84181-1267-4b3c-a537-d76ffdcd2172" />
+      <TestMethod codeBase="C:/Users/Mr.Bao/Desktop/QLKhachSan/QLKhachSan/TestFormLogin/bin/Debug/TestFormLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestFormLogin.UnitTestFormLogin, TestFormLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDangNhapSaiUsername" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e1bea3ac-d61e-bfab-f58f-e4df2d9e4d98" executionId="8ab84181-1267-4b3c-a537-d76ffdcd2172" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8ab84181-1267-4b3c-a537-d76ffdcd2172" testId="e1bea3ac-d61e-bfab-f58f-e4df2d9e4d98" testName="TestDangNhapSaiUsername" computerName="DESKTOP-MNT85I8" duration="00:00:00.0217261" startTime="2019-11-14T09:45:45.4337876+07:00" endTime="2019-11-14T09:45:45.6182994+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ab84181-1267-4b3c-a537-d76ffdcd2172">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;admin&gt;. Actual:&lt;admin123&gt;. </Message>
+          <StackTrace>   at TestFormLogin.UnitTestFormLogin.TestDangNhapSaiUsername() in C:\Users\Mr.Bao\Desktop\QLKhachSan\QLKhachSan\TestFormLogin\UnitTestFormLogin.cs:line 32
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
