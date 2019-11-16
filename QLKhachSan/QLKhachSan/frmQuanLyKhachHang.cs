@@ -18,6 +18,12 @@ namespace QLKhachSan
 
         List<KhachHang> listKH = new List<KhachHang>();
 
+        public List<KhachHang> layDSKH()
+        {
+            khoiTaoKhachHang();
+            return listKH;
+        }
+
         private void khoiTaoKhachHang()
         {
             KhachHang kh1 = new KhachHang("KH1", "Nguyễn Văn A", "123 TP.HCM", "TP.HCM", "01/01/1999", "123456789", "987654321");
@@ -66,6 +72,12 @@ namespace QLKhachSan
 
         private void btnThemKH_Click(object sender, EventArgs e)
         {
+            if (txtHoTenKH.Text == "" || txtDiaChiKH.Text == "" || txtNgaySinhKH.Text == "" || txtQueQuanKH.Text == "" || txtSoDienThoaiKH.Text == "" || txtSoCMNDKH.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập đủ thông tin của khách hàng", "Thêm khách hàng");
+                return;
+            }
+
             string maKH, hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND;
 
             maKH = "KH" + (listKH.Count + 1).ToString();
@@ -85,25 +97,35 @@ namespace QLKhachSan
 
         private void btnCapNhatKH_Click(object sender, EventArgs e)
         {
-            listViewKH.SelectedItems[0].SubItems[1].Text = txtHoTenKH.Text;
-            listViewKH.SelectedItems[0].SubItems[2].Text = txtDiaChiKH.Text;
-            listViewKH.SelectedItems[0].SubItems[3].Text = txtNgaySinhKH.Text;
-            listViewKH.SelectedItems[0].SubItems[4].Text = txtQueQuanKH.Text;
-            listViewKH.SelectedItems[0].SubItems[5].Text = txtSoDienThoaiKH.Text;
-            listViewKH.SelectedItems[0].SubItems[6].Text = txtSoCMNDKH.Text;
+            if (listViewKH.SelectedItems.Count > 0)
+            {
+                listViewKH.SelectedItems[0].SubItems[1].Text = txtHoTenKH.Text;
+                listViewKH.SelectedItems[0].SubItems[2].Text = txtDiaChiKH.Text;
+                listViewKH.SelectedItems[0].SubItems[3].Text = txtNgaySinhKH.Text;
+                listViewKH.SelectedItems[0].SubItems[4].Text = txtQueQuanKH.Text;
+                listViewKH.SelectedItems[0].SubItems[5].Text = txtSoDienThoaiKH.Text;
+                listViewKH.SelectedItems[0].SubItems[6].Text = txtSoCMNDKH.Text;
 
-            MessageBox.Show("Cập nhật khách hàng thành công", "Cập nhật khách hàng");
-            clearTxt();
+                MessageBox.Show("Cập nhật khách hàng thành công", "Cập nhật khách hàng");
+                clearTxt();
+            }
+            else
+                MessageBox.Show("Bạn phải chọn khách hàng cần cập nhật", "Cập nhật khách hàng");       
         }
 
         private void btnXoaKH_Click(object sender, EventArgs e)
         {
-            DialogResult dR = MessageBox.Show("Bạn có chắc muốn xóa khách hàng này ?", "Xóa khách hàng", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dR == DialogResult.Yes)
+            if (listViewKH.SelectedItems.Count > 0)
             {
-                listViewKH.SelectedItems[0].Remove();
-                clearTxt();
+                DialogResult dR = MessageBox.Show("Bạn có chắc muốn xóa khách hàng này ?", "Xóa khách hàng", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dR == DialogResult.Yes)
+                {
+                    listViewKH.SelectedItems[0].Remove();
+                    clearTxt();
+                }
             }
+            else
+                MessageBox.Show("Bạn phải chọn khách hàng cần xóa", "Xóa khách hàng");   
         }
     }
 }

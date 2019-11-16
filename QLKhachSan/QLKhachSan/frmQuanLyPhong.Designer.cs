@@ -41,17 +41,18 @@
             this.tinhTrang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ngayVao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ngayDi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tenKH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.soCMND = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbPhong = new System.Windows.Forms.Label();
             this.txtPhong = new System.Windows.Forms.TextBox();
-            this.txtTinhTrang = new System.Windows.Forms.TextBox();
             this.lbKhachHang = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtKhachHang = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
-            this.tenKH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.soCMND = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbLoaiPhong = new System.Windows.Forms.Label();
             this.txtLoaiPhong = new System.Windows.Forms.TextBox();
+            this.radioBtnTrong = new System.Windows.Forms.RadioButton();
+            this.radioBtnDangO = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -188,6 +189,18 @@
             this.ngayDi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ngayDi.Width = 79;
             // 
+            // tenKH
+            // 
+            this.tenKH.Text = "Khách hàng";
+            this.tenKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tenKH.Width = 143;
+            // 
+            // soCMND
+            // 
+            this.soCMND.Text = "CMND";
+            this.soCMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.soCMND.Width = 90;
+            // 
             // lbPhong
             // 
             this.lbPhong.AutoSize = true;
@@ -208,14 +221,6 @@
             this.txtPhong.ReadOnly = true;
             this.txtPhong.Size = new System.Drawing.Size(133, 30);
             this.txtPhong.TabIndex = 7;
-            // 
-            // txtTinhTrang
-            // 
-            this.txtTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTinhTrang.Location = new System.Drawing.Point(605, 67);
-            this.txtTinhTrang.Name = "txtTinhTrang";
-            this.txtTinhTrang.Size = new System.Drawing.Size(105, 30);
-            this.txtTinhTrang.TabIndex = 7;
             // 
             // lbKhachHang
             // 
@@ -257,18 +262,6 @@
             this.txtCMND.Size = new System.Drawing.Size(209, 30);
             this.txtCMND.TabIndex = 7;
             // 
-            // tenKH
-            // 
-            this.tenKH.Text = "Khách hàng";
-            this.tenKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tenKH.Width = 143;
-            // 
-            // soCMND
-            // 
-            this.soCMND.Text = "CMND";
-            this.soCMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.soCMND.Width = 90;
-            // 
             // lbLoaiPhong
             // 
             this.lbLoaiPhong.AutoSize = true;
@@ -290,14 +283,41 @@
             this.txtLoaiPhong.Size = new System.Drawing.Size(105, 30);
             this.txtLoaiPhong.TabIndex = 7;
             // 
+            // radioBtnTrong
+            // 
+            this.radioBtnTrong.AutoSize = true;
+            this.radioBtnTrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.radioBtnTrong.ForeColor = System.Drawing.Color.Blue;
+            this.radioBtnTrong.Location = new System.Drawing.Point(610, 58);
+            this.radioBtnTrong.Name = "radioBtnTrong";
+            this.radioBtnTrong.Size = new System.Drawing.Size(68, 24);
+            this.radioBtnTrong.TabIndex = 8;
+            this.radioBtnTrong.TabStop = true;
+            this.radioBtnTrong.Text = "Trống";
+            this.radioBtnTrong.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnDangO
+            // 
+            this.radioBtnDangO.AutoSize = true;
+            this.radioBtnDangO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.radioBtnDangO.ForeColor = System.Drawing.Color.Blue;
+            this.radioBtnDangO.Location = new System.Drawing.Point(610, 90);
+            this.radioBtnDangO.Name = "radioBtnDangO";
+            this.radioBtnDangO.Size = new System.Drawing.Size(79, 24);
+            this.radioBtnDangO.TabIndex = 8;
+            this.radioBtnDangO.TabStop = true;
+            this.radioBtnDangO.Text = "Đang ở";
+            this.radioBtnDangO.UseVisualStyleBackColor = true;
+            // 
             // frmQuanLyPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 496);
+            this.Controls.Add(this.radioBtnDangO);
+            this.Controls.Add(this.radioBtnTrong);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtLoaiPhong);
-            this.Controls.Add(this.txtTinhTrang);
             this.Controls.Add(this.txtKhachHang);
             this.Controls.Add(this.txtPhong);
             this.Controls.Add(this.listViewPhong);
@@ -339,7 +359,6 @@
         private System.Windows.Forms.ColumnHeader ngayDi;
         private System.Windows.Forms.Label lbPhong;
         private System.Windows.Forms.TextBox txtPhong;
-        private System.Windows.Forms.TextBox txtTinhTrang;
         private System.Windows.Forms.Label lbKhachHang;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtKhachHang;
@@ -348,5 +367,7 @@
         private System.Windows.Forms.ColumnHeader soCMND;
         private System.Windows.Forms.Label lbLoaiPhong;
         private System.Windows.Forms.TextBox txtLoaiPhong;
+        private System.Windows.Forms.RadioButton radioBtnTrong;
+        private System.Windows.Forms.RadioButton radioBtnDangO;
     }
 }

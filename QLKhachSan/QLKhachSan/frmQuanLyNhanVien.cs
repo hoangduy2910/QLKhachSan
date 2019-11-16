@@ -18,6 +18,12 @@ namespace QLKhachSan
 
         List<NhanVien> listNV = new List<NhanVien>();
 
+        public List<NhanVien> layDSNV()
+        {
+            khoiTaoNhanVien();
+            return listNV;
+        }
+
         private void khoiTaoNhanVien()
         {
             NhanVien nv1 = new NhanVien("NV1", "Nguyễn Hoàng Duy", "123 TP.HCM", "TP.HCM", "01/01/1999", "123456789", "987654321", "100000", "Tiếp tân");
@@ -68,6 +74,12 @@ namespace QLKhachSan
 
         private void btnThemNV_Click(object sender, EventArgs e)
         {
+            if (txtHoTen.Text == "" || txtDiaChi.Text == "" || txtNgaySinh.Text == "" || txtQueQuan.Text == "" || txtSDT.Text == "" || txtCMND.Text == "" || txtLuong.Text == "" || txtChucVu.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập đủ thông tin của nhân viên", "Thêm nhân viên");
+                return;
+            }
+
             string maNV, hoTen, diaChi, ngaySinh, queQuan, soDienThoai, soCMND, luong, chucVu;
 
             maNV = "NV" + (listNV.Count + 1).ToString();
@@ -89,25 +101,35 @@ namespace QLKhachSan
 
         private void btnCapNhatNV_Click(object sender, EventArgs e)
         {
-            listViewNV.SelectedItems[0].SubItems[1].Text = txtHoTen.Text;
-            listViewNV.SelectedItems[0].SubItems[2].Text = txtDiaChi.Text;
-            listViewNV.SelectedItems[0].SubItems[3].Text = txtNgaySinh.Text;
-            listViewNV.SelectedItems[0].SubItems[4].Text = txtQueQuan.Text;
-            listViewNV.SelectedItems[0].SubItems[5].Text = txtSDT.Text;
-            listViewNV.SelectedItems[0].SubItems[6].Text = txtCMND.Text;
+            if (listViewNV.SelectedItems.Count > 0)
+            {
+                listViewNV.SelectedItems[0].SubItems[1].Text = txtHoTen.Text;
+                listViewNV.SelectedItems[0].SubItems[2].Text = txtDiaChi.Text;
+                listViewNV.SelectedItems[0].SubItems[3].Text = txtNgaySinh.Text;
+                listViewNV.SelectedItems[0].SubItems[4].Text = txtQueQuan.Text;
+                listViewNV.SelectedItems[0].SubItems[5].Text = txtSDT.Text;
+                listViewNV.SelectedItems[0].SubItems[6].Text = txtCMND.Text;
 
-            MessageBox.Show("Cập nhật nhân viên thành công", "Cập nhật nhân viên");
-            clearTxt();
+                MessageBox.Show("Cập nhật nhân viên thành công", "Cập nhật nhân viên");
+                clearTxt();
+            }
+            else
+                MessageBox.Show("Bạn phải chọn nhân viên cần cập nhật", "Cập nhật nhân viên");      
         }
 
         private void btnXoaNV_Click(object sender, EventArgs e)
         {
-            DialogResult dR = MessageBox.Show("Bạn có chắc muốn xóa nhân viên này ?", "Xóa nhân viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dR == DialogResult.Yes)
+            if (listViewNV.SelectedItems.Count > 0)
             {
-                listViewNV.SelectedItems[0].Remove();
-                clearTxt();
+                DialogResult dR = MessageBox.Show("Bạn có chắc muốn xóa nhân viên này ?", "Xóa nhân viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dR == DialogResult.Yes)
+                {
+                    listViewNV.SelectedItems[0].Remove();
+                    clearTxt();
+                }
             }
+            else
+                MessageBox.Show("Bạn phải chọn nhân viên cần xóa", "Xóa nhân viên"); 
         }
     }
 }

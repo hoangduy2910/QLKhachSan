@@ -5,7 +5,7 @@ using System.Text;
 
 namespace QLKhachSan
 {
-    class KhachHang
+    public class KhachHang
     {
         public string maKH, hoTen, diaChi, queQuan, ngaySinh, soDienThoai, soCMND;
 

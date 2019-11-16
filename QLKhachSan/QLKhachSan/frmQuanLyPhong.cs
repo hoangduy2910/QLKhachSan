@@ -50,9 +50,10 @@ namespace QLKhachSan
         {
             txtPhong.Text = "";
             txtLoaiPhong.Text = "";
-            txtTinhTrang.Text = "";
             txtKhachHang.Text = "";
             txtCMND.Text = "";
+            radioBtnDangO.Checked = false;
+            radioBtnTrong.Checked = false;
         }
 
         private void frmQuanLyPhong_Load(object sender, EventArgs e)
@@ -65,22 +66,27 @@ namespace QLKhachSan
         {
             txtPhong.Text = listViewPhong.SelectedItems[0].SubItems[0].Text;
             txtLoaiPhong.Text = listViewPhong.SelectedItems[0].SubItems[1].Text;
-            txtTinhTrang.Text = listViewPhong.SelectedItems[0].SubItems[2].Text;
+            if (listViewPhong.SelectedItems[0].SubItems[2].Text == "Trống")
+                radioBtnTrong.Checked = true;
+            else
+                radioBtnDangO.Checked = true;
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if (txtPhong.Text == "" || txtLoaiPhong.Text == "" || txtTinhTrang.Text == "" || txtKhachHang.Text == "" || txtCMND.Text == "")
-                return;
-                
-            listViewPhong.SelectedItems[0].SubItems[2].Text = txtTinhTrang.Text;
-            listViewPhong.SelectedItems[0].SubItems[3].Text = dateTimeNgayVao.Text;
-            listViewPhong.SelectedItems[0].SubItems[4].Text = dateTimeNgayDi.Text;
-            listViewPhong.SelectedItems[0].SubItems[5].Text = txtKhachHang.Text;
-            listViewPhong.SelectedItems[0].SubItems[6].Text = txtCMND.Text;
+            if (listViewPhong.SelectedItems.Count > 0)
+            {
+                listViewPhong.SelectedItems[0].SubItems[2].Text = radioBtnDangO.Text;
+                listViewPhong.SelectedItems[0].SubItems[3].Text = dateTimeNgayVao.Text;
+                listViewPhong.SelectedItems[0].SubItems[4].Text = dateTimeNgayDi.Text;
+                listViewPhong.SelectedItems[0].SubItems[5].Text = txtKhachHang.Text;
+                listViewPhong.SelectedItems[0].SubItems[6].Text = txtCMND.Text;
 
-            MessageBox.Show("Cập nhật phòng thành công", "Cập nhật phòng");
-            clearTxt();
+                MessageBox.Show("Cập nhật phòng thành công", "Cập nhật phòng");
+                clearTxt();
+            }
+            else
+                MessageBox.Show("Bạn phải chọn phòng cần cập nhật", "Cập nhật phòng");
         }
     }
 }
