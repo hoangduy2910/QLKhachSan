@@ -5,10 +5,10 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using QLKhachSan;
 
-namespace TestFormLogin
+namespace TestQLKhachSan
 {
     [TestClass]
-    public class UnitTestFormLogin
+    public class UnitTestFrmLogin
     {
         private string user, pass;
 
@@ -18,7 +18,7 @@ namespace TestFormLogin
             this.user = "admin";
             this.pass = "123";
         }
- 
+
         [TestMethod]
         public void TestDangNhapThanhCong()
         {

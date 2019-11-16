@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c0a8b5bf-97a4-49f2-b418-1903edb9cd0e" name="TiDK@TIDK-PC 2019-11-16 08:38:54" runUser="TiDK-PC\TiDK" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4832f6f6-0122-46c3-a19a-a0aebfdfd26e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="TiDK_TIDK-PC 2019-11-16 08_38_54">
+      <DeploymentItem filename="C:\Users\TiDK\Desktop\QLKhachSan\QLKhachSan\QLKhachSan\bin\Debug\QLKhachSan.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-11-16T08:38:54.7327527+07:00" queuing="2019-11-16T08:38:56.1055551+07:00" start="2019-11-16T08:38:56.4487557+07:00" finish="2019-11-16T08:38:57.0727568+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestDangSaiPassword" storage="c:\users\tidk\desktop\qlkhachsan\qlkhachsan\testqlkhachsan\bin\debug\testqlkhachsan.dll" id="0b4ec09c-c971-be03-ce00-0a51ab8ed75b">
+      <Execution id="fdcc1885-6c96-4ac2-90a6-574961d35f87" />
+      <TestMethod codeBase="C:/Users/TiDK/Desktop/QLKhachSan/QLKhachSan/TestQLKhachSan/bin/Debug/TestQLKhachSan.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQLKhachSan.UnitTestFrmLogin, TestQLKhachSan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDangSaiPassword" />
+    </UnitTest>
+    <UnitTest name="TestKhongNhapPassword" storage="c:\users\tidk\desktop\qlkhachsan\qlkhachsan\testqlkhachsan\bin\debug\testqlkhachsan.dll" id="602b0673-3044-ad46-fe8a-b5704d8a6e5c">
+      <Execution id="12e17e19-1a54-414b-b0b8-748fa3204749" />
+      <TestMethod codeBase="C:/Users/TiDK/Desktop/QLKhachSan/QLKhachSan/TestQLKhachSan/bin/Debug/TestQLKhachSan.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQLKhachSan.UnitTestFrmLogin, TestQLKhachSan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestKhongNhapPassword" />
+    </UnitTest>
+    <UnitTest name="TestKhongNhapUserName" storage="c:\users\tidk\desktop\qlkhachsan\qlkhachsan\testqlkhachsan\bin\debug\testqlkhachsan.dll" id="2344bcb5-3ea9-479e-05d9-6cd17e79e20d">
+      <Execution id="d617a7d4-fe4d-44e9-902f-aedd2fc07cbf" />
+      <TestMethod codeBase="C:/Users/TiDK/Desktop/QLKhachSan/QLKhachSan/TestQLKhachSan/bin/Debug/TestQLKhachSan.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQLKhachSan.UnitTestFrmLogin, TestQLKhachSan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestKhongNhapUserName" />
+    </UnitTest>
+    <UnitTest name="TestDangNhapSaiUsername" storage="c:\users\tidk\desktop\qlkhachsan\qlkhachsan\testqlkhachsan\bin\debug\testqlkhachsan.dll" id="20b0ec0f-1781-d0db-06f5-1f2b50da1bd6">
+      <Execution id="1f833a90-3939-45ec-9803-15eaef2083bf" />
+      <TestMethod codeBase="C:/Users/TiDK/Desktop/QLKhachSan/QLKhachSan/TestQLKhachSan/bin/Debug/TestQLKhachSan.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQLKhachSan.UnitTestFrmLogin, TestQLKhachSan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDangNhapSaiUsername" />
+    </UnitTest>
+    <UnitTest name="TestKhongNhapUserNameVaPassword" storage="c:\users\tidk\desktop\qlkhachsan\qlkhachsan\testqlkhachsan\bin\debug\testqlkhachsan.dll" id="3280187f-31aa-6bdc-2c0f-5a1eafefeb27">
+      <Execution id="5e86ea55-bf5d-4508-a115-b08b9d4c9596" />
+      <TestMethod codeBase="C:/Users/TiDK/Desktop/QLKhachSan/QLKhachSan/TestQLKhachSan/bin/Debug/TestQLKhachSan.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQLKhachSan.UnitTestFrmLogin, TestQLKhachSan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestKhongNhapUserNameVaPassword" />
+    </UnitTest>
+    <UnitTest name="TestDangNhapThanhCong" storage="c:\users\tidk\desktop\qlkhachsan\qlkhachsan\testqlkhachsan\bin\debug\testqlkhachsan.dll" id="736986ec-f14e-2b8f-8436-bdb1ccb24237">
+      <Execution id="c4d71d4d-1825-45ac-8087-14a70c63beca" />
+      <TestMethod codeBase="C:/Users/TiDK/Desktop/QLKhachSan/QLKhachSan/TestQLKhachSan/bin/Debug/TestQLKhachSan.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQLKhachSan.UnitTestFrmLogin, TestQLKhachSan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDangNhapThanhCong" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b4ec09c-c971-be03-ce00-0a51ab8ed75b" executionId="fdcc1885-6c96-4ac2-90a6-574961d35f87" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20b0ec0f-1781-d0db-06f5-1f2b50da1bd6" executionId="1f833a90-3939-45ec-9803-15eaef2083bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2344bcb5-3ea9-479e-05d9-6cd17e79e20d" executionId="d617a7d4-fe4d-44e9-902f-aedd2fc07cbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3280187f-31aa-6bdc-2c0f-5a1eafefeb27" executionId="5e86ea55-bf5d-4508-a115-b08b9d4c9596" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="602b0673-3044-ad46-fe8a-b5704d8a6e5c" executionId="12e17e19-1a54-414b-b0b8-748fa3204749" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="736986ec-f14e-2b8f-8436-bdb1ccb24237" executionId="c4d71d4d-1825-45ac-8087-14a70c63beca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fdcc1885-6c96-4ac2-90a6-574961d35f87" testId="0b4ec09c-c971-be03-ce00-0a51ab8ed75b" testName="TestDangSaiPassword" computerName="TIDK-PC" duration="00:00:00.0152663" startTime="2019-11-16T08:38:56.5423559+07:00" endTime="2019-11-16T08:38:56.9167565+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fdcc1885-6c96-4ac2-90a6-574961d35f87">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f833a90-3939-45ec-9803-15eaef2083bf" testId="20b0ec0f-1781-d0db-06f5-1f2b50da1bd6" testName="TestDangNhapSaiUsername" computerName="TIDK-PC" duration="00:00:00.0001793" startTime="2019-11-16T08:38:56.9167565+07:00" endTime="2019-11-16T08:38:56.9323565+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f833a90-3939-45ec-9803-15eaef2083bf">
+    </UnitTestResult>
+    <UnitTestResult executionId="d617a7d4-fe4d-44e9-902f-aedd2fc07cbf" testId="2344bcb5-3ea9-479e-05d9-6cd17e79e20d" testName="TestKhongNhapUserName" computerName="TIDK-PC" duration="00:00:00.0002677" startTime="2019-11-16T08:38:56.9323565+07:00" endTime="2019-11-16T08:38:56.9323565+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d617a7d4-fe4d-44e9-902f-aedd2fc07cbf">
+    </UnitTestResult>
+    <UnitTestResult executionId="5e86ea55-bf5d-4508-a115-b08b9d4c9596" testId="3280187f-31aa-6bdc-2c0f-5a1eafefeb27" testName="TestKhongNhapUserNameVaPassword" computerName="TIDK-PC" duration="00:00:00.0002070" startTime="2019-11-16T08:38:56.9323565+07:00" endTime="2019-11-16T08:38:56.9479566+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e86ea55-bf5d-4508-a115-b08b9d4c9596">
+    </UnitTestResult>
+    <UnitTestResult executionId="12e17e19-1a54-414b-b0b8-748fa3204749" testId="602b0673-3044-ad46-fe8a-b5704d8a6e5c" testName="TestKhongNhapPassword" computerName="TIDK-PC" duration="00:00:00.0002757" startTime="2019-11-16T08:38:56.9479566+07:00" endTime="2019-11-16T08:38:56.9479566+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12e17e19-1a54-414b-b0b8-748fa3204749">
+    </UnitTestResult>
+    <UnitTestResult executionId="c4d71d4d-1825-45ac-8087-14a70c63beca" testId="736986ec-f14e-2b8f-8436-bdb1ccb24237" testName="TestDangNhapThanhCong" computerName="TIDK-PC" duration="00:00:00.0002878" startTime="2019-11-16T08:38:56.9479566+07:00" endTime="2019-11-16T08:38:56.9635566+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4d71d4d-1825-45ac-8087-14a70c63beca">
+    </UnitTestResult>
+  </Results>
+</TestRun>
