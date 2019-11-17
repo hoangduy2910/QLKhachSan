@@ -60,6 +60,7 @@ namespace QLKhachSan
             txtCMND.Text = "";
             radioBtnDangO.Checked = false;
             radioBtnTrong.Checked = false;
+            listViewPhong.SelectedItems.Clear();
         }
 
         private void frmQuanLyPhong_Load(object sender, EventArgs e)
@@ -72,6 +73,8 @@ namespace QLKhachSan
         {
             txtPhong.Text = listViewPhong.SelectedItems[0].SubItems[0].Text;
             txtLoaiPhong.Text = listViewPhong.SelectedItems[0].SubItems[1].Text;
+            txtKhachHang.Text = listViewPhong.SelectedItems[0].SubItems[5].Text;
+            txtCMND.Text = listViewPhong.SelectedItems[0].SubItems[6].Text;
             if (listViewPhong.SelectedItems[0].SubItems[2].Text == "Trống")
                 radioBtnTrong.Checked = true;
             else
@@ -93,6 +96,31 @@ namespace QLKhachSan
             }
             else
                 MessageBox.Show("Bạn phải chọn phòng cần cập nhật", "Cập nhật phòng");
+            listViewPhong.SelectedItems.Clear();
+        }
+
+        private void btnKhoiPhuc_Click(object sender, EventArgs e)
+        {
+            if (listViewPhong.SelectedItems.Count > 0)
+            {
+                DialogResult dR = MessageBox.Show("Bạn có chắc muốn khôi phục phòng trở về tình trạng ban đầu", "Khôi phục phòng", MessageBoxButtons.YesNo);
+                if (dR == DialogResult.Yes)
+                {
+                    listViewPhong.SelectedItems[0].SubItems[2].Text = radioBtnTrong.Text;
+                    listViewPhong.SelectedItems[0].SubItems[3].Text = "";
+                    listViewPhong.SelectedItems[0].SubItems[4].Text = "";
+                    listViewPhong.SelectedItems[0].SubItems[5].Text = "";
+                    listViewPhong.SelectedItems[0].SubItems[6].Text = "";
+                    clearTxt();
+                } 
+            }
+            else
+                MessageBox.Show("Bạn phải chọn phòng cần khôi phục", "Khôi phục phòng");
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            clearTxt();
         }
     }
 }

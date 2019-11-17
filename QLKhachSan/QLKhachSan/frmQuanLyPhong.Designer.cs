@@ -53,6 +53,8 @@
             this.txtLoaiPhong = new System.Windows.Forms.TextBox();
             this.radioBtnTrong = new System.Windows.Forms.RadioButton();
             this.radioBtnDangO = new System.Windows.Forms.RadioButton();
+            this.btnKhoiPhuc = new System.Windows.Forms.Button();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -130,10 +132,10 @@
             // 
             this.btnCapNhat.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCapNhat.Location = new System.Drawing.Point(298, 250);
+            this.btnCapNhat.Location = new System.Drawing.Point(162, 242);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(127, 42);
+            this.btnCapNhat.Size = new System.Drawing.Size(127, 49);
             this.btnCapNhat.TabIndex = 5;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
@@ -309,6 +311,32 @@
             this.radioBtnDangO.Text = "Đang ở";
             this.radioBtnDangO.UseVisualStyleBackColor = true;
             // 
+            // btnKhoiPhuc
+            // 
+            this.btnKhoiPhuc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhoiPhuc.ForeColor = System.Drawing.Color.Red;
+            this.btnKhoiPhuc.Location = new System.Drawing.Point(307, 242);
+            this.btnKhoiPhuc.Margin = new System.Windows.Forms.Padding(2);
+            this.btnKhoiPhuc.Name = "btnKhoiPhuc";
+            this.btnKhoiPhuc.Size = new System.Drawing.Size(127, 49);
+            this.btnKhoiPhuc.TabIndex = 5;
+            this.btnKhoiPhuc.Text = "Khôi phục";
+            this.btnKhoiPhuc.UseVisualStyleBackColor = true;
+            this.btnKhoiPhuc.Click += new System.EventHandler(this.btnKhoiPhuc_Click);
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
+            this.btnLamMoi.Location = new System.Drawing.Point(450, 242);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(127, 49);
+            this.btnLamMoi.TabIndex = 5;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // frmQuanLyPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +349,8 @@
             this.Controls.Add(this.txtKhachHang);
             this.Controls.Add(this.txtPhong);
             this.Controls.Add(this.listViewPhong);
+            this.Controls.Add(this.btnLamMoi);
+            this.Controls.Add(this.btnKhoiPhuc);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.dateTimeNgayDi);
             this.Controls.Add(this.dateTimeNgayVao);
@@ -369,5 +399,7 @@
         private System.Windows.Forms.TextBox txtLoaiPhong;
         private System.Windows.Forms.RadioButton radioBtnTrong;
         private System.Windows.Forms.RadioButton radioBtnDangO;
+        private System.Windows.Forms.Button btnKhoiPhuc;
+        private System.Windows.Forms.Button btnLamMoi;
     }
 }

@@ -68,6 +68,7 @@ namespace QLKhachSan
             txtQueQuanKH.Text = "";
             txtSoDienThoaiKH.Text = "";
             txtSoCMNDKH.Text = "";
+            listViewKH.SelectedItems.Clear();
         }
 
         private void btnThemKH_Click(object sender, EventArgs e)
@@ -110,7 +111,8 @@ namespace QLKhachSan
                 clearTxt();
             }
             else
-                MessageBox.Show("Bạn phải chọn khách hàng cần cập nhật", "Cập nhật khách hàng");       
+                MessageBox.Show("Bạn phải chọn khách hàng cần cập nhật", "Cập nhật khách hàng");
+            listViewKH.SelectedItems.Clear();
         }
 
         private void btnXoaKH_Click(object sender, EventArgs e)
@@ -126,6 +128,11 @@ namespace QLKhachSan
             }
             else
                 MessageBox.Show("Bạn phải chọn khách hàng cần xóa", "Xóa khách hàng");   
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            clearTxt();
         }
     }
 }

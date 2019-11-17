@@ -52,6 +52,7 @@
             this.btnThemKH = new System.Windows.Forms.Button();
             this.btnCapNhatKH = new System.Windows.Forms.Button();
             this.btnXoaKH = new System.Windows.Forms.Button();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbQLKH
@@ -242,7 +243,7 @@
             // 
             // btnThemKH
             // 
-            this.btnThemKH.Location = new System.Drawing.Point(157, 218);
+            this.btnThemKH.Location = new System.Drawing.Point(100, 218);
             this.btnThemKH.Name = "btnThemKH";
             this.btnThemKH.Size = new System.Drawing.Size(126, 43);
             this.btnThemKH.TabIndex = 3;
@@ -253,7 +254,7 @@
             // btnCapNhatKH
             // 
             this.btnCapNhatKH.ForeColor = System.Drawing.Color.Green;
-            this.btnCapNhatKH.Location = new System.Drawing.Point(306, 218);
+            this.btnCapNhatKH.Location = new System.Drawing.Point(249, 218);
             this.btnCapNhatKH.Name = "btnCapNhatKH";
             this.btnCapNhatKH.Size = new System.Drawing.Size(126, 43);
             this.btnCapNhatKH.TabIndex = 3;
@@ -264,7 +265,7 @@
             // btnXoaKH
             // 
             this.btnXoaKH.ForeColor = System.Drawing.Color.Red;
-            this.btnXoaKH.Location = new System.Drawing.Point(457, 218);
+            this.btnXoaKH.Location = new System.Drawing.Point(400, 218);
             this.btnXoaKH.Name = "btnXoaKH";
             this.btnXoaKH.Size = new System.Drawing.Size(126, 43);
             this.btnXoaKH.TabIndex = 3;
@@ -272,11 +273,23 @@
             this.btnXoaKH.UseVisualStyleBackColor = true;
             this.btnXoaKH.Click += new System.EventHandler(this.btnXoaKH_Click);
             // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
+            this.btnLamMoi.Location = new System.Drawing.Point(551, 218);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(126, 43);
+            this.btnLamMoi.TabIndex = 3;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // frmQuanLyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 519);
+            this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnXoaKH);
             this.Controls.Add(this.btnCapNhatKH);
             this.Controls.Add(this.btnThemKH);
@@ -332,5 +345,6 @@
         private System.Windows.Forms.Button btnThemKH;
         private System.Windows.Forms.Button btnCapNhatKH;
         private System.Windows.Forms.Button btnXoaKH;
+        private System.Windows.Forms.Button btnLamMoi;
     }
 }

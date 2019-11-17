@@ -58,6 +58,7 @@ namespace QLKhachSan
             txtCMND.Text = "";
             txtLuong.Text = "";
             txtChucVu.Text = "";
+            listViewNV.SelectedItems.Clear();
         }
 
         private void listViewNV_MouseClick(object sender, MouseEventArgs e)
@@ -114,7 +115,8 @@ namespace QLKhachSan
                 clearTxt();
             }
             else
-                MessageBox.Show("Bạn phải chọn nhân viên cần cập nhật", "Cập nhật nhân viên");      
+                MessageBox.Show("Bạn phải chọn nhân viên cần cập nhật", "Cập nhật nhân viên");
+            listViewNV.SelectedItems.Clear();
         }
 
         private void btnXoaNV_Click(object sender, EventArgs e)
@@ -130,6 +132,11 @@ namespace QLKhachSan
             }
             else
                 MessageBox.Show("Bạn phải chọn nhân viên cần xóa", "Xóa nhân viên"); 
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            clearTxt();
         }
     }
 }
