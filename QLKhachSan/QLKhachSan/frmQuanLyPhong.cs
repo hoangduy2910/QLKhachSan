@@ -18,6 +18,12 @@ namespace QLKhachSan
 
         List<Phong> listPhong = new List<Phong>();
 
+        public List<Phong> layDSPhong()
+        {
+            khoiTaoPhong();
+            return listPhong;
+        }
+
         public void khoiTaoPhong()
         {
             Phong phong101 = new Phong("101", "Đơn", "Trống", "", "", "", "");

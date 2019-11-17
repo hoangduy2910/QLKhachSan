@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="867de2ad-e48c-4c71-a17d-a316e7245bd7" name="TiDK@TIDK-PC 2019-11-17 08:40:07" runUser="TiDK-PC\TiDK" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4832f6f6-0122-46c3-a19a-a0aebfdfd26e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="TiDK_TIDK-PC 2019-11-17 08_40_07">
+      <DeploymentItem filename="C:\Users\TiDK\Desktop\QLKhachSan\QLKhachSan\QLKhachSan\bin\Debug\QLKhachSan.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-11-17T08:40:07.3305898+07:00" queuing="2019-11-17T08:40:07.3795926+07:00" start="2019-11-17T08:40:07.3875930+07:00" finish="2019-11-17T08:40:07.7366130+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestCapNhatKhachHangThanhCong" storage="c:\users\tidk\desktop\qlkhachsan\qlkhachsan\testqlkhachsan\bin\debug\testqlkhachsan.dll" id="62a494b3-c77c-4c5b-9db8-61c8c948766c">
+      <Execution id="61c3abf0-c9cc-4524-9e41-f71d8ee1fc80" />
+      <TestMethod codeBase="C:/Users/TiDK/Desktop/QLKhachSan/QLKhachSan/TestQLKhachSan/bin/Debug/TestQLKhachSan.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQLKhachSan.UnitTestFrmQuanLyKhachHang, TestQLKhachSan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCapNhatKhachHangThanhCong" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="62a494b3-c77c-4c5b-9db8-61c8c948766c" executionId="61c3abf0-c9cc-4524-9e41-f71d8ee1fc80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="61c3abf0-c9cc-4524-9e41-f71d8ee1fc80" testId="62a494b3-c77c-4c5b-9db8-61c8c948766c" testName="TestCapNhatKhachHangThanhCong" computerName="TIDK-PC" duration="00:00:00.0287149" startTime="2019-11-17T08:40:07.4345957+07:00" endTime="2019-11-17T08:40:07.7206121+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61c3abf0-c9cc-4524-9e41-f71d8ee1fc80">
+    </UnitTestResult>
+  </Results>
+</TestRun>

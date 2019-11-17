@@ -50,6 +50,7 @@
     <Compile Include="UnitTestFrmLogin.cs" />
     <Compile Include="UnitTestFrmQuanLyKhachHang.cs" />
     <Compile Include="UnitTestFrmQuanLyNhanVien.cs" />
+    <Compile Include="UnitTestFrmQuanLyPhong.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QLKhachSan\QLKhachSan.csproj">

@@ -91,6 +91,7 @@
             this.Controls.Add(this.btnQLKH);
             this.Controls.Add(this.btnQLNV);
             this.Name = "frmTrangChu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTrangChu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTrangChu_FormClosed);
             this.ResumeLayout(false);
