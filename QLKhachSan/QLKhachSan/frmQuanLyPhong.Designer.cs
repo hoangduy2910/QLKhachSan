@@ -87,6 +87,7 @@
             // dateTimeNgayVao
             // 
             this.dateTimeNgayVao.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeNgayVao.Enabled = false;
             this.dateTimeNgayVao.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeNgayVao.Location = new System.Drawing.Point(90, 128);
             this.dateTimeNgayVao.Margin = new System.Windows.Forms.Padding(2);

@@ -85,14 +85,22 @@ namespace QLKhachSan
         {
             if (listViewPhong.SelectedItems.Count > 0)
             {
-                listViewPhong.SelectedItems[0].SubItems[2].Text = radioBtnDangO.Text;
-                listViewPhong.SelectedItems[0].SubItems[3].Text = dateTimeNgayVao.Text;
-                listViewPhong.SelectedItems[0].SubItems[4].Text = dateTimeNgayDi.Text;
-                listViewPhong.SelectedItems[0].SubItems[5].Text = txtKhachHang.Text;
-                listViewPhong.SelectedItems[0].SubItems[6].Text = txtCMND.Text;
+                if (txtKhachHang.Text == "" || txtCMND.Text == "")
+                {
+                    MessageBox.Show("Bạn phải nhập đầy đủ thông tin", "Cập nhật phòng");
+                    return;
+                }
+                else
+                {
+                    listViewPhong.SelectedItems[0].SubItems[2].Text = radioBtnDangO.Text;
+                    listViewPhong.SelectedItems[0].SubItems[3].Text = dateTimeNgayVao.Text;
+                    listViewPhong.SelectedItems[0].SubItems[4].Text = dateTimeNgayDi.Text;
+                    listViewPhong.SelectedItems[0].SubItems[5].Text = txtKhachHang.Text;
+                    listViewPhong.SelectedItems[0].SubItems[6].Text = txtCMND.Text;
 
-                MessageBox.Show("Cập nhật phòng thành công", "Cập nhật phòng");
-                clearTxt();
+                    MessageBox.Show("Cập nhật phòng thành công", "Cập nhật phòng");
+                    clearTxt();
+                }
             }
             else
                 MessageBox.Show("Bạn phải chọn phòng cần cập nhật", "Cập nhật phòng");
