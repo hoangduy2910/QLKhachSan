@@ -15,7 +15,7 @@ namespace QLKhachSan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQuanLyPhong());
+            Application.Run(new frmLogin());
         }
     }
 }
